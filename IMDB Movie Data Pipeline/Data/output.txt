@@ -1,0 +1,99 @@
+PS X:\Portfolio Projects> 'C:\Users\Martin\anaconda3\python.exe' 'x:\Portfolio Projects\IMDB Movie Data Pipeline\movie-data-pipeline.py' 
+2022-12-27 19:18:48.795988  :  Downloading https://datasets.imdbws.com/
+2022-12-27 19:18:49.357236  :  Extracted file urls:
+         https://datasets.imdbws.com/name.basics.tsv.gz
+        https://datasets.imdbws.com/title.akas.tsv.gz
+        https://datasets.imdbws.com/title.basics.tsv.gz
+        https://datasets.imdbws.com/title.crew.tsv.gz
+        https://datasets.imdbws.com/title.episode.tsv.gz
+        https://datasets.imdbws.com/title.principals.tsv.gz
+        https://datasets.imdbws.com/title.ratings.tsv.gz
+2022-12-27 19:18:49.360181  :  Executing ../SQL/create_staging_tables.sql
+2022-12-27 19:18:49.427694  :  ../SQL/create_staging_tables.sql successfully executed
+2022-12-27 19:18:49.428703  :  --------------------
+2022-12-27 19:18:49.429689  :  Downloading dataset from https://datasets.imdbws.com/name.basics.tsv.gz
+2022-12-27 19:18:53.704126  :  name.basics.tsv.gz downloaded successfully
+2022-12-27 19:18:53.706129  :  Uncompressing name.basics.tsv.gz
+2022-12-27 19:18:59.762742  :  name.basics.tsv.gz successfully uncompressed to name.basics.tsv
+2022-12-27 19:18:59.763740  :  Deleting name.basics.tsv.gz
+2022-12-27 19:18:59.787675  :  Importing data from name.basics.tsv into STAGING_NAME_BASICS
+2022-12-27 19:19:45.397451  :  Data successfully imported!
+2022-12-27 19:19:45.398142  :  Deleting name.basics.tsv
+2022-12-27 19:19:45.461018  :  --------------------
+2022-12-27 19:19:45.462188  :  Downloading dataset from https://datasets.imdbws.com/title.akas.tsv.gz
+2022-12-27 19:19:51.077726  :  title.akas.tsv.gz downloaded successfully
+2022-12-27 19:19:51.079722  :  Uncompressing title.akas.tsv.gz
+2022-12-27 19:20:00.760099  :  title.akas.tsv.gz successfully uncompressed to title.akas.tsv
+2022-12-27 19:20:00.762223  :  Deleting title.akas.tsv.gz
+2022-12-27 19:20:00.791940  :  Importing data from title.akas.tsv into STAGING_TITLE_AKAS
+2022-12-27 19:22:10.284626  :  Data successfully imported!
+2022-12-27 19:22:10.285753  :  Deleting title.akas.tsv
+2022-12-27 19:22:10.423260  :  --------------------
+2022-12-27 19:22:10.424209  :  Downloading dataset from https://datasets.imdbws.com/title.basics.tsv.gz
+2022-12-27 19:22:14.266500  :  title.basics.tsv.gz downloaded successfully
+2022-12-27 19:22:14.267447  :  Uncompressing title.basics.tsv.gz
+2022-12-27 19:22:19.801048  :  title.basics.tsv.gz successfully uncompressed to title.basics.tsv
+2022-12-27 19:22:19.802134  :  Deleting title.basics.tsv.gz
+2022-12-27 19:22:19.818141  :  Importing data from title.basics.tsv into STAGING_TITLE_BASICS
+2022-12-27 19:23:05.664208  :  Data successfully imported!
+2022-12-27 19:23:05.665190  :  Deleting title.basics.tsv
+2022-12-27 19:23:05.730230  :  --------------------
+2022-12-27 19:23:05.731371  :  Downloading dataset from https://datasets.imdbws.com/title.crew.tsv.gz
+2022-12-27 19:23:08.093702  :  title.crew.tsv.gz downloaded successfully
+2022-12-27 19:23:08.094722  :  Uncompressing title.crew.tsv.gz
+2022-12-27 19:23:10.113087  :  title.crew.tsv.gz successfully uncompressed to title.crew.tsv
+2022-12-27 19:23:10.114131  :  Deleting title.crew.tsv.gz
+2022-12-27 19:23:10.125062  :  Importing data from title.crew.tsv into STAGING_TITLE_CREW
+2022-12-27 19:23:34.949205  :  Data successfully imported!
+2022-12-27 19:23:34.950170  :  Deleting title.crew.tsv
+2022-12-27 19:23:34.977407  :  --------------------
+2022-12-27 19:23:34.978394  :  Downloading dataset from https://datasets.imdbws.com/title.episode.tsv.gz
+2022-12-27 19:23:36.140969  :  title.episode.tsv.gz downloaded successfully
+2022-12-27 19:23:36.141966  :  Uncompressing title.episode.tsv.gz
+2022-12-27 19:23:37.216456  :  title.episode.tsv.gz successfully uncompressed to title.episode.tsv
+2022-12-27 19:23:37.217454  :  Deleting title.episode.tsv.gz
+2022-12-27 19:23:37.221456  :  Importing data from title.episode.tsv into STAGING_TITLE_EPISODE
+2022-12-27 19:23:54.665437  :  Data successfully imported!
+2022-12-27 19:23:54.666950  :  Deleting title.episode.tsv
+2022-12-27 19:23:54.684955  :  --------------------
+2022-12-27 19:23:54.685917  :  Downloading dataset from https://datasets.imdbws.com/title.principals.tsv.gz
+2022-12-27 19:24:01.855010  :  title.principals.tsv.gz downloaded successfully
+2022-12-27 19:24:01.856202  :  Uncompressing title.principals.tsv.gz
+2022-12-27 19:24:16.018734  :  title.principals.tsv.gz successfully uncompressed to title.principals.tsv
+2022-12-27 19:24:16.019767  :  Deleting title.principals.tsv.gz
+2022-12-27 19:24:16.056084  :  Importing data from title.principals.tsv into STAGING_TITLE_PRINCIPALS
+2022-12-27 19:27:19.151330  :  Data successfully imported!
+2022-12-27 19:27:19.153325  :  Deleting title.principals.tsv
+2022-12-27 19:27:19.376693  :  --------------------
+2022-12-27 19:27:19.377699  :  Downloading dataset from https://datasets.imdbws.com/title.ratings.tsv.gz
+2022-12-27 19:27:20.788187  :  title.ratings.tsv.gz downloaded successfully
+2022-12-27 19:27:20.788293  :  Uncompressing title.ratings.tsv.gz
+2022-12-27 19:27:20.939072  :  title.ratings.tsv.gz successfully uncompressed to title.ratings.tsv
+2022-12-27 19:27:20.940075  :  Deleting title.ratings.tsv.gz
+2022-12-27 19:27:20.942066  :  Importing data from title.ratings.tsv into STAGING_TITLE_RATINGS
+2022-12-27 19:27:23.519073  :  Data successfully imported!
+2022-12-27 19:27:23.520070  :  Deleting title.ratings.tsv
+2022-12-27 19:27:23.523062  :  --------------------
+2022-12-27 19:27:23.525288  :  Executing x:\Portfolio Projects\IMDB Movie Data Pipeline\SQL\1_title_basics_data_processing.sql
+2022-12-27 19:29:29.563430  :  x:\Portfolio Projects\IMDB Movie Data Pipeline\SQL\1_title_basics_data_processing.sql successfully executed
+2022-12-27 19:29:29.563628  :  --------------------
+2022-12-27 19:29:29.564633  :  Executing x:\Portfolio Projects\IMDB Movie Data Pipeline\SQL\2_name_basics_data_processing.sql
+2022-12-27 19:33:42.211041  :  x:\Portfolio Projects\IMDB Movie Data Pipeline\SQL\2_name_basics_data_processing.sql successfully executed
+2022-12-27 19:33:42.212231  :  --------------------
+2022-12-27 19:33:42.213216  :  Executing x:\Portfolio Projects\IMDB Movie Data Pipeline\SQL\3_title_principals_data_processing.sql
+2022-12-27 19:42:16.765405  :  x:\Portfolio Projects\IMDB Movie Data Pipeline\SQL\3_title_principals_data_processing.sql successfully executed
+2022-12-27 19:42:16.766446  :  --------------------
+2022-12-27 19:42:16.767447  :  Executing x:\Portfolio Projects\IMDB Movie Data Pipeline\SQL\4_title_episode_data_processing.sql
+2022-12-27 19:43:05.925750  :  x:\Portfolio Projects\IMDB Movie Data Pipeline\SQL\4_title_episode_data_processing.sql successfully executed
+2022-12-27 19:43:05.926095  :  --------------------
+2022-12-27 19:43:05.927103  :  Executing x:\Portfolio Projects\IMDB Movie Data Pipeline\SQL\5_title_ratings_data_processing.sql
+2022-12-27 19:43:07.898068  :  x:\Portfolio Projects\IMDB Movie Data Pipeline\SQL\5_title_ratings_data_processing.sql successfully executed
+2022-12-27 19:43:07.898530  :  --------------------
+2022-12-27 19:43:07.899531  :  Executing x:\Portfolio Projects\IMDB Movie Data Pipeline\SQL\6_title_crew_data_processing.sql
+2022-12-27 19:45:27.031065  :  x:\Portfolio Projects\IMDB Movie Data Pipeline\SQL\6_title_crew_data_processing.sql successfully executed
+2022-12-27 19:45:27.032274  :  --------------------
+2022-12-27 19:45:27.032777  :  Executing x:\Portfolio Projects\IMDB Movie Data Pipeline\SQL\7_title_akas_data_processing.sql
+2022-12-27 19:58:41.505973  :  x:\Portfolio Projects\IMDB Movie Data Pipeline\SQL\7_title_akas_data_processing.sql successfully executed
+2022-12-27 19:58:41.506976  :  --------------------
+2022-12-27 19:58:41.508966  :  Executing ../SQL/drop_staging_tables.sql
+2022-12-27 20:03:23.854446  :  ../SQL/drop_staging_tables.sql successfully executed
